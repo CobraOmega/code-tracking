@@ -15,7 +15,7 @@ class TicTacToe
     public:
     TicTacToe()
     {
-        resetboard(); 
+        resetboard();
     }
 
     void resetboard()   //To reset data of board
