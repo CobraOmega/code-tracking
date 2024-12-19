@@ -1,5 +1,4 @@
 #include <iostream>  //For input/output using cin and cout
-#include <cstdlib>   //For srand and rand
 #include <ctime>     //For time function to seed random generator
 
 using namespace std; //To not use std:: everytime
