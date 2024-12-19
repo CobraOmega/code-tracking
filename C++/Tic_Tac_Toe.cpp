@@ -609,7 +609,7 @@ void menu() //Play Menu Function
                         {
                             cout << "You have chosen Hard Difficulty!\n";
                             
-                        } 
+                        }
                         else if (difficulty == 4) 
                         {
                             menu(); 
