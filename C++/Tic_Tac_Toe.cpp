@@ -1,5 +1,5 @@
 #include <iostream>  //For input/output using cin and cout
-#include <ctime>     //For time function to seed random generator
+#include <ctime>     //For time function to seed random generator 
 
 using namespace std; //To not use std:: everytime
 class TicTacToe
