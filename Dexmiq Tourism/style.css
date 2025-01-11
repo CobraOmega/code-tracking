@@ -1,0 +1,247 @@
+* {
+    margin: o;
+    padding: o;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Section*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #dff0d8;
+}
+
+/* Hero Secton*/
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: liner-gradient(to bottom #4CAF50, #66bb6a);
+    background-image: url(./Hero.jpg);
+    color: white;
+    height: 200px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.hero .search-bar input {
+    padding: 10px 15px;
+    width: 300px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.hero .search-bar button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.hero .hearch-bar button:hover {
+    background-color: #555;
+}
+
+/* Tour Packages Grid*/
+.packages {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.package-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px #0000001a;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+}
+
+.package-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.package-card h3 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.package-card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.package-card button {
+    margin: 15px 0;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.package-card button:hover {
+    background-color: #45a049;
+}
+
+/* Filter Sidebar*/
+.filter {
+    width: 250px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6 px #0000001a;
+    margin: 30px;
+}
+
+.filters h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.filters label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.filter input {
+    margin-right: 10px;
+}
+
+/* Tour Package*/
+.packages {
+    max-width: 800px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .packages img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .packages h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .packages p {
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  .packages button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .packages button:hover {
+    background-color: #45A049;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+    }
+  
+    header nav ul li {
+      margin: 10px 0;
+    }
+  
+    .packages {
+      grid-template-columns: 1fr;
+    }
+  
+    .hero .search-bar {
+      flex-direction: column;
+    }
+  
+    .hero .search-bar input {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+  
+    .hero .search-bar button {
+      border-radius: 5px;
+    }
+  }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    
+    <form>
+        <div><!--For First name-->          <!--For text-->
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" placeholder="John">
+        </div>
+
+        <br>
+
+        <div><!--For Last name-->           <!--For text-->
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" placeholder="Wick">
+        </div>
+
+        <br>
+
+        <div><!--For E-Mail-->              <!--For email-->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="abc@xyz.com" required>
+        </div>
+
+        <br>
+
+        <div><!--For Password-->            <!--For password-->
+            <label for="Pass">Password:  </label>
+            <input type="password" id="pass" placeholder="Between 8-20 words" minlength="8" maxlength="20" required>
+        </div>
+
+        <br>
+
+        <div><!--For Phone Number-->        <!--For tel-->
+            <label for="phone">Contact number:</label>
+            <input type="tel" id="phone" placeholder="123-456-7890" required>
+        </div>
+
+        <br>
+        
+        <div><!--For DOB-->                 <!--For date-->
+            <label for="dob">Date Of Birth: </label>
+            <input type="date" id="dob" required>
+        </div>
+        
+        <br>
+        
+        <div><!--For status-->              <!--For radio-->
+            <label for="stat">Status: </label>
+            <label for="unemp">Unemployed</label>
+            <input type="radio" name="stat" id="unemp" value="Unemployed">
+
+            <label for="emp">Employed</label>
+            <input type="radio" name="stat" id="emp" value="Employed">
+
+            <label>Student</label>
+            <input type="radio" name="stat" id="stud" value="Student">
+        </div>
+
+        <br>
+
+        <div><!--For Gender-->              <!--For options(Drop down)-->
+            <label for="sex">Sex: </label>
+            <select id="sex" name="Gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>                               <!--For checkbox-->
+            <label for="check">Done</label>
+            <input type="checkbox" id="check">
+        </div>
+
+        <br>
+
+        <div><!--For Reset button-->        <!--For reset-->
+            <input type="reset">
+        </div>
+
+        <br>
+
+        <div><!--For Submit button-->       <!--For submit-->
+            <input type="submit">
+        </div>
+
+
+    </form>
+</body>
+</html>
