@@ -1,0 +1,452 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #fff;
+    position: relative;
+    
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    color: #010250;
+}
+
+#navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+#navbar ul li {
+    margin-right: 20px;
+}
+
+#navbar ul li a {
+    color: #010250;
+    font-size: 19px;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.borabora-package .hero {
+    background-image: url(./images/borabora1.png);
+}
+
+.maldives-package .hero {
+    background-image: url(./images/Maldiveshero.jfif);
+}
+
+.amalficoast-package .hero {
+    background-image: url(./images/AmalfiCoastHero.png);
+}
+
+.lakelouise-package .hero {
+    background-image: url(./images/LakeLouiseHero.jpg);
+}
+
+.kyoto-package .hero {
+    background-image: url(./images/KyotoHero.webp);
+}
+
+.seychelles-package .hero {
+    background-image: url(./images/SeychellesHero.jpg);
+}
+
+.santorini-package .hero {
+    background-image: url(./images/SantoriniHero.jpg);
+}
+
+.santorini-package .hero {
+    background-image: url(./images/SantoriniHero.jpg);
+}
+
+.bali-package .hero {
+    background-image: url(./images/BaliHero.webp);
+}
+
+.udaipur-package .hero {
+    background-image: url(./images/UdaipurHero.jfif);
+}
+
+.goa-package .hero {
+    background-image: url(./images/GoaHero.avif);
+}
+
+.keralabackwaters-package .hero {
+    background-image: url(./images/KeralaBackwatersHero);
+}
+
+.coorg-package .hero {
+    background-image: url(./images/CoorgHero.jpg);
+}
+
+
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.itinerary-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #010250;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    scroll-behavior: smooth;
+}
+
+.itinerary-btn:hover {
+    background: none;
+}
+
+/* Package Details Section */
+.package-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.package-detail-card {
+    flex: 1;
+    max-width: 500px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', 'Arial', sans-serif; /* Modern, clean fonts */
+    color: #333; /* Neutral color for readability */
+    line-height: 1.5;
+}
+
+.package-detail-card h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.package-description {
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0;
+}
+
+.bottom-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #777;
+}
+
+.bottom-info .duration {
+    font-weight: bold;
+}
+
+.bottom-info .price {
+    font-size: 24px;
+    color: #f4a300;
+}
+
+.book-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #010250;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #333;
+}
+
+/* Highlights Section */
+.highlights {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 40px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.highlights h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.highlights ul {
+    list-style-type: none;
+}
+
+.highlights ul li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Itinerary Section */
+.itinerary {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 40px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.itinerary h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.itinerary .day {
+    margin-bottom: 30px;
+}
+
+.itinerary .day h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.itinerary .day p {
+    font-size: 15px;
+    color: #555;
+}
+
+/* Inclusions Section */
+.inclusions {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 40px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.inclusions h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.inclusions ul {
+    list-style-type: none;
+}
+
+.inclusions ul li {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Exclusions Section */
+.exclusions {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 40px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.exclusions h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.exclusions ul {
+    list-style-type: none;
+}
+
+.exclusions ul li {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Booking Section */
+.book-now {
+    background-color: #555555;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 40px 0;
+    border-radius: 8px;
+}
+
+.book-now h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.book-now p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.book-now .book-btn {
+    background-color: #fff;
+    color: #555555;
+    transition: background-color 0.3s ease;
+}
+
+.book-now .book-btn:hover {
+    background-color: #555555;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .package-detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package-detail-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .hero {
+        height: 50vh;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem;
+    }
+
+    .itinerary-btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #navbar ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .package-detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package-detail-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dexmiq Tourism</title>
+    <link rel="stylesheet" href="./stylemain.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    
+
+    <!-- Hero Section-->
+     <section class="hero">   
+        <!--  Navigation Bar  -->
+        <div class="navbar" >                       
+            <div class="container flex" >                      
+                <a href="./index.html" class="logo"><h1>Dexmiq Tourism</h1></a>
+                <nav id="navbar"> 
+                    <ul>
+                        <li><a href="" class="file">Profile</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    <!--  End of Navigation bar  -->                                  
+            <div class="hero-text">                         <!--To align text in the center-->
+                <h1>Find your perfect getaway</h1>
+                <p>Explore exciting destinations and packages tailored to your needs.</p>
+            </div>
+     </section>
+    <!--  End of Hero Section  -->                                                                                          
+
+    <!-- Filter Bar-->
+    <div class="filter-bar">
+        <div class="filter-item">                           
+            <input type="text" name="Search" placeholder="Search your destination" title="Search for a destination"> <!--search (for destination)-->  
+        </div>
+        <div class="filter-item">                                                       
+            <select id="rating" title="Filter by rating">                            <!--To dropdown list for ratings-->                               
+                <option id="user-rating">User Rating</option>
+                <option value="4+">⭐⭐⭐⭐ and above</option>
+                <option value="3+">⭐⭐⭐ and above</option>
+            </select>
+        </div>
+        <div class="filter-item">                      
+            <select id="price" title="Sort by price">                     <!--dropdown list for sorting by price-->
+                <option value="">Sort by Price</option>
+                <option value="low">Low to High</option>
+                <option value="high">High to Low</option>
+            </select>
+        </div>
+        <div class="filter-item">
+            <button class="search-btn">Search</button>                         <!--search button-->
+        </div>
+    </div>
+    <!--  End of Filter Bar  -->
+
+    <!-- Tour Package Grid-->
+    <div class="container">                                 <!--Container to contain all elements inside-->
+        <section class="packages" id="packages">                          <!--Section for packages-->            
+            <div class="package-card">                      <!--Individual cards-->
+                <a href="./borabora.html">
+                    <img src="./images/BoraBora.png" alt="A stunning overwater bungalow in Bora Bora surrounded by turquoise lagoon waters and lush green mountains.">    <!--image for the card-->
+                    <h3>Overwater Bliss Retreat</h3>
+                    <div class="review-rating">
+                        <span class="rating">⭐ 4.8</span>
+                        <span class="reviews">(200 reviews)</span>
+                    </div>
+                </a>    
+            </div>
+            <div class="package-card">
+                <a href="./Maldives.html">
+                    <img src="./images/Maldives.png" alt="Crystal-clear waters of the Maldives with overwater villas and a vibrant coral reef in the distance.">
+                    <h3>Serene Island Escape</h3>
+                    <div class="review-rating">
+                        <span class="rating">⭐ 4.5</span>
+                        <span class="reviews">(410 reviews)</span>
+                    </div>
+                </a>
+            </div>
+            <div class="package-card">                      <!--Individual cards-->
+                <a href="./AmalfiCoast.html">
+                    <img src="./images/AmalfiCoast.png" alt="Picturesque cliffs of the Amalfi Coast with colorful houses and the azure blue Mediterranean Sea below.">
+                    <h3>Mediterranean Serenity</h3>
+                    <div class="review-rating">
+                        <span class="rating">⭐ 4.4</span>
+                        <span class="reviews">(520 reviews)</span>
+                    </div>     <!--Right next to Ratings 'not down'-->
+                </a>    
+            </div>
+            <div class="package-card">                      <!--Individual cards-->
+                <a href="./LakeLouise.html">
+                    <img src="./images/LakeLouise.png" alt="Serene Lake Louise in Canada, surrounded by majestic snow-capped mountains and pine forests.">
+                    <h3>Alpine Tranquility</h3>
+                    <div class="review-rating">
+                        <span class="rating">⭐ 4.1</span>
+                        <span class="reviews">(280 reviews)</span>
+                    </div>   
+                </a>    
+            </div>
+            <div class="package-card">                      <!--Individual cards-->
+                <a href="./Kyoto.html">
+                    <img src="./images/Kyoto.png" alt="Traditional Japanese pagoda in Kyoto surrounded by blooming cherry blossoms and a serene garden.">
+                    <h3>Zen & Cherry Blossoms</h3>
+                    <div class="review-rating">
+                        <span class="rating">⭐ 4.5</span>
+                        <span class="reviews">(375 reviews)</span>
+                    </div>     
+                </a>    
+            </div>
+            <div class="package-card">                      <!--Individual cards-->
+                <a href="./Seychelles.html">
+                    <img src="./images/Seychelles.png" alt="Pristine white-sand beach in Seychelles with large granite boulders and lush tropical greenery.">
+                    <h3>Secluded Paradise</h3>
+                    <div class="review-rating">
+                        <span class="rating">⭐ 4.6</span>
+                        <span class="reviews">(420 reviews)</span>
+                    </div>     
+                </a>    
+            </div>
+            <div class="package-card">                      <!--Individual cards-->
+                <a href="./Santorini.html">
+                    <img src="./images/Santorini.png" alt="Iconic whitewashed buildings of Santorini with blue domes overlooking the Aegean Sea at sunset.">
+                    <h3>Romantic Sunset Escape</h3>
+                    <div class="review-rating">
+                        <span class="rating">⭐ 4.3</span>
+                        <span class="reviews">(380 reviews)</span>
+                    </div>     
+                </a>    
+            </div>
+            <div class="package-card">                      <!--Individual cards-->
+                <a href="./Bali.html">
+                    <img src="./images/Bali.png" alt="A tranquil rice terrace in Bali, with lush green fields and palm trees under a sunny sky.">
+                    <h3 <!--style="font-size:23px;"-->Tropical Wellness Retreat</h3>
+                    <div class="review-rating">
+                        <span class="rating">⭐ 4.5</span>
+                        <span class="reviews">(450 reviews)</span>
+                    </div>     
+                </a>    
+            </div>
+            <div class="package-card">                      <!--Udaipur-->
+                <a href="./Udaipur.html">
+                    <img src="./images/Udaipur.png" alt="Lake Pichola in Udaipur with historic palaces and temples reflecting in the tranquil water.">
+                    <h3>Royal Heritage Getaway</h3>
+                    <div class="review-rating">
+                        <span class="rating">⭐ 4.2</span>
+                        <span class="reviews">(280 reviews)</span>
+                    </div>     
+                </a>    
+            </div>
+            <div class="package-card">                      <!--Individual cards-->
+                <a href="./Goa.html">
+                    <img src="./images/Goa.png" alt="Golden sandy beach in Goa with palm trees swaying in the breeze under a vibrant sunset.">
+                    <h3>Beachside Adventure</h3>
+                    <div class="review-rating">
+                        <span class="rating">⭐ 3.8</span>
+                        <span class="reviews">(320 reviews)</span>
+                    </div>     
+                </a>    
+            </div>
+            <div class="package-card">                      <!--Individual cards-->
+                <a href="./KeralaBackwaters.html">
+                    <img src="./images/KeralaBackwaters.png" alt="A serene houseboat floating on the peaceful Kerala backwaters surrounded by lush coconut trees.">
+                    <h3>Houseboat Tranquility</h3>
+                    <div class="review-rating">
+                        <span class="rating">⭐ 4.4</span>
+                        <span class="reviews">(260 reviews)</span>
+                    </div>     
+                </a>    
+            </div>
+            <div class="package-card">                      <!--Individual cards-->
+                <a href="./Coorg.html">
+                    <img src="./images/Coorg.png" alt="Misty hills of Coorg with lush green coffee plantations and dense forests.">
+                    <h3>Mist & Coffee Retreat</h3>
+                    <div class="review-rating">
+                        <span class="rating">⭐ 4.3</span>
+                        <span class="reviews">(230 reviews)</span>
+                    </div>     
+                </a>    
+            </div>
+        </section>
+    </div> 
+    <!--  End of Tour Package Grid-->
+</body>
+<footer>
+    <p>&copy; 2025 Dexmiq Travels. All rights reserved.</p>
+</footer>
+</html>

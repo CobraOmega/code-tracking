@@ -1,0 +1,379 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*  Utilities  */
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    justify-content: center;
+    height: 100%;
+}
+
+body,
+html {
+    font-family: 'sans-serif', 'Lato';
+    Line-height: 1.6;
+    background-color: #F9F9F9;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+} 
+
+/*  Navigation Bar  */
+.navbar {
+    background-color: #eceaea18; /*Navbar color*/
+    color: #FFD700;
+    height: auto;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo h1 {
+    font-weight: bold;
+    color: #010250;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+
+
+.navbar ul {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.navbar a {
+    /*212121*/
+    color: #fff;
+    margin: 10 5px;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #010250;
+}
+
+.navbar li {
+    display: flex;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar .profile {
+    display: flex;
+    align-items: center;
+    color: #010250;
+}
+
+/*  Hero  */
+.hero {
+    position: relative;
+    height: 70vh;
+    background-image: url(./Hero.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+   /*padding: 20px;*/
+    padding-bottom: 0px;
+    min-height: 300px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 30px;
+    color: #fff;
+}
+
+/* Filter Bar*/
+.filter-bar {
+    position: relative;
+    display: flex;      /*Sets filters in a row*/
+    flex-wrap: wrap;    /*Wraps in next line*/
+    justify-content: center; /*Centers filters*/
+    bottom: 86px;
+    left: 50%;
+    transform: translateX(-50%); /*Center horizontally and move up halfway */
+    background-color: #4a4a4a5d;
+    padding: 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    align-items: center;
+    gap: 10px;
+    z-index: 1; /*it overlaps the background */
+    max-width: 80%;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
+}
+
+.filter-bar input,
+.filter-bar select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filter-bar button {
+    padding: 10px 20px;
+    border: none;
+    color: #F9F9F9;
+    background-color: #010250;
+    color: 333333;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1 1 auto;
+}
+
+/*.filter-bar button:hover {
+    background-color: #9A9A9A;
+    color: #ffd700;
+}*/
+
+.filter-item {
+    
+    margin: 5px; 
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Tour Package*/
+.packages {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    color: #FFD700;
+    /*margin: 50px auto; /*Center the grid container*/
+    max-width: 1300px;
+    background-color: #F9F9F9 ;
+  }
+  
+.package-card {
+    background: #F9F9F9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height:auto;
+}
+  
+.package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /*border: 2px solid #ffd700; /*Gold border on hover *
+    box-shadow: 0 0 15px 4px rgba(255, 215, 0, 0.7); /*Glowing effect */
+}
+  
+.package-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 6px;
+}
+  
+.package-card h3 {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #2E2E2E;
+}
+  
+.package-card h2 {
+    margin: 5px 5px;
+    color: #212121;
+    font-weight: bold;
+    font-size: 27px;
+}
+.package-card a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+}
+
+.package-card a:hover {
+    background-color: #ffffff;
+}
+
+.review-rating
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #212121;
+    margin: 8px 0;
+}
+
+.review-rating .rating
+{
+    font-weight: bold;
+}
+
+.bottom-info
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #212121;
+    margin: 8px 0;
+}
+
+.bottom-info .duration {
+    font-weight: 500;
+  }
+  
+  .bottom-info .price {
+    font-weight: bold;
+    color: #27ae60;
+  }
+
+footer {
+    background-color: #333;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* For Tablet*/
+@media (max-width: 768px) {
+
+    .packages {
+        padding:35px;
+    }
+
+    .navbar .container {
+       
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        width: 100%;
+        
+        gap: 10;
+        margin-top: 10px;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar .logo h1 {
+        margin-bottom: 15px;
+    }
+
+    .filter-bar {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+/* For mobile*/
+@media (max-width: 480px) {
+
+    .hero {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+    
+    .filter-bar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        gap: 8px;
+    }
+
+    .navbar ul li {
+        margin-bottom: 5px;
+       
+    }
+    
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .packages {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .filter-bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+}
